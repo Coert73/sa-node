@@ -4,14 +4,15 @@
   "description": "",
   "main": "server.js",
   "dependencies": {
+    "@prisma/client": "^2.29.0",
     "cors": "^2.8.5",
     "express": "^4.17.1",
-    "nodemon": "^2.0.12"
+    "nodemon": "^2.0.12",
+    "prisma": "^2.29.0"
   },
   "devDependencies": {},
   "scripts": {
-    "dev": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",

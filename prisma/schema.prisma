@@ -1,0 +1,15 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Profile {
+  id     Int     @default(autoincrement()) @id
+  firstName    String
+  lastName     String
+  appointmentDate DateTime
+}
