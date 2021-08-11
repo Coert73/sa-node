@@ -5,7 +5,7 @@ const app = express();
 //import the routes
 const appointmentRoutes = require('./routes/appointments');
 
-app.use(todappointmentRoutesoRoutes);
+app.use(appointmentRoutes);
 app.use(express.json());
 app.use(cors());
 

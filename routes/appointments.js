@@ -16,7 +16,7 @@ router.get('/appointments', async (req,res) => {
 });
 
 //Create new appointment.
-router.get('/appointments/create', async (req,res) => {
+router.post('/appointments/create', async (req,res) => {
     await prisma.profile.create({
         data: {
           firstName: 'Test1',
@@ -24,7 +24,7 @@ router.get('/appointments/create', async (req,res) => {
           appointmentDate: new Date(Date.now()).toISOString()
         },
       })
-      res.end('Created');
+      res.send('Created');
 });
 
 module.exports = router;
