@@ -11,13 +11,13 @@ router.get('/', async (req,res) => {
 
 //Get all appointments.
 router.get('/appointments', async (req,res) => {
-    const allUsers = await prisma.profile.findMany();
+    const allUsers = await prisma.appointment.findMany();
     res.send(allUsers);
 });
 
 //Create new appointment.
 router.post('/appointments/create', async (req,res) => {
-    await prisma.profile.create({
+    await prisma.appointment.create({
         data: {
           email: 'test',
           firstName: 'Test1',
