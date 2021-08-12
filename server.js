@@ -12,7 +12,6 @@ app.use(databaseRoutes);
 app.use(appointmentRoutes);
 app.use(express.json());
 
-
 const host = 'localhost';
 const port = 8081;
 
