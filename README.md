@@ -42,3 +42,5 @@ npm start
     - Connection -> Password: password
     - Connection -> Save password: true
     - Click Save
+
+9. To seed your database, open a browser and inster this url: http://localhost:8081/seed
