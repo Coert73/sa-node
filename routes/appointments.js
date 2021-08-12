@@ -15,17 +15,4 @@ router.get('/appointments', async (req,res) => {
     res.send(allUsers);
 });
 
-//Create new appointment.
-router.post('/appointments/create', async (req,res) => {
-    await prisma.appointment.create({
-        data: {
-          email: 'test',
-          firstName: 'Test1',
-          lastName: 'test2',
-          appointmentDate: new Date(Date.now()).toISOString()
-        },
-      })
-      res.send('Created');
-});
-
 module.exports = router;

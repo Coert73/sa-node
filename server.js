@@ -4,8 +4,11 @@ const app = express();
 
 //import the routes
 const appointmentRoutes = require('./routes/appointments');
+//import the routes
+const databaseRoutes = require('./routes/database');
 
 app.use(cors());
+app.use(databaseRoutes);
 app.use(appointmentRoutes);
 app.use(express.json());
 

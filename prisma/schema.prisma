@@ -12,6 +12,10 @@ model Appointment {
   email        String
   firstName    String
   lastName     String
-  description  String
-  appointmentDate DateTime
+  cellphone    String
+  petName      String
+  petType      String
+  vistReason  String
+  appointmentStartDate DateTime
+  appointmentEndDate DateTime
 }
