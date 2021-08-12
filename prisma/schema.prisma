@@ -7,10 +7,11 @@ generator client {
   provider = "prisma-client-js"
 }
 
-model Profile {
+model Appointment {
   id     Int     @default(autoincrement()) @id
   email        String
   firstName    String
   lastName     String
+  description  String
   appointmentDate DateTime
 }
