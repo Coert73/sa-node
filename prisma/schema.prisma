@@ -9,6 +9,7 @@ generator client {
 
 model Profile {
   id     Int     @default(autoincrement()) @id
+  email        String
   firstName    String
   lastName     String
   appointmentDate DateTime

@@ -19,6 +19,7 @@ router.get('/appointments', async (req,res) => {
 router.post('/appointments/create', async (req,res) => {
     await prisma.profile.create({
         data: {
+          email: 'test',
           firstName: 'Test1',
           lastName: 'test2',
           appointmentDate: new Date(Date.now()).toISOString()
