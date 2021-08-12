@@ -1,6 +1,5 @@
 # sa-node
 
-
 ### How to setup the database:
 1. Install any database management client you feel comfortable with like: pgadmin, DBeaver etc.
 2. Ensure that you remeber the username and password you used to create the primary user of your DB client
@@ -28,3 +27,18 @@ npx prisma migrate dev
 ```
 npm start
 ```
+
+8. Alternatively run ```docker-compose up -d``` within this root dir to spin up a postgres docker container
+ - login to pgadmin with credentials:
+    - username: dev@dev.com
+    - password: password
+ - add postgres server to pgadmin:
+    - Servers -> Create -> Server
+    - General -> Name: docker
+    - Connection -> Host name: sa_pg_container
+    - Connection -> Port: 5432
+    - Connection -> Maintenance database: sa_db
+    - Connection -> Username: postgres
+    - Connection -> Password: password
+    - Connection -> Save password: true
+    - Click Save
