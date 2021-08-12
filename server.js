@@ -5,12 +5,12 @@ const app = express();
 //import the routes
 const appointmentRoutes = require('./routes/appointments');
 
+app.use(cors());
 app.use(appointmentRoutes);
 app.use(express.json());
-app.use(cors());
 
 
-const host = '127.0.0.1';
+const host = 'localhost';
 const port = 8081;
 
 app.listen(port, function () {
