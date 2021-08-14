@@ -7,6 +7,7 @@ const prisma = new PrismaClient()
 // Health check
 router.get('/', async (req,res) => {
     res.send('Server is running');
+    const t = 1;
 });
 
 //Get all appointments.
